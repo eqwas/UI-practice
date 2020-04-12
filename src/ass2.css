@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  background-color: #1e90ff;
+}
+.father {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+.redbox {
+  background-color: #ff6b81;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.greybox {
+  background-color: #d8d8d8;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+}
+.greybox:nth-child(2):hover {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,98 @@
+html,
+body {
+  background-color: white;
+  height: 100%;
+}
+.box1 {
+  background-color: #76c4c6;
+  width: 500px;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fakebox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: #76c4c6;
+  animation: fakeRotate 1s ease-in-out infinite;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+}
+
+@keyframes fakeRotate {
+  50%,
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.box2 {
+  background-color: #1eac9c;
+  width: 500px;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #1eac9c;
+}
+.anibox1 {
+  background-color: white;
+  width: 13px;
+  height: 60px;
+  animation: stretch 1s ease-in-out infinite;
+}
+.anibox2 {
+  background-color: white;
+  width: 13px;
+  height: 60px;
+  animation: stretch 1s ease-in-out infinite 0.1s;
+}
+.anibox3 {
+  background-color: white;
+  width: 13px;
+  height: 60px;
+  animation: stretch 1s ease-in-out infinite 0.2s;
+}
+.anibox4 {
+  background-color: white;
+  width: 13px;
+  height: 60px;
+  animation: stretch 1s ease-in-out infinite 0.3s;
+}
+.anibox5 {
+  background-color: white;
+  width: 13px;
+  height: 60px;
+  animation: stretch 1s ease-in-out infinite 0.4s;
+}
+
+@keyframes stretch {
+  30% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1, 2);
+  }
+
+  70% {
+    transform: scale(1, 1);
+  }
+}

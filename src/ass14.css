@@ -1,0 +1,170 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.container:first-child .bottomBox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: green;
+}
+.bottomBox .bottomBox__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(147, 216, 209);
+}
+.container:first-child .topBox {
+  opacity: 0;
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+.topBox .topBox__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.topBox__content .hide {
+  margin-top: 20px;
+}
+.topBox__content .first {
+  color: red;
+}
+.topBox__content .btn {
+  margin-top: 20px;
+  padding: 5px;
+  width: 100px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: tomato;
+}
+.container:first-child .topBox:hover {
+  opacity: 1;
+  transform: translate(10px, 10px);
+}
+
+.container:nth-child(2) .mainBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 150px;
+
+  background-color: rgb(238, 202, 208);
+  transition: all 0.2s ease-in;
+}
+.mainBox .mainBox__icon {
+  width: 70px;
+  height: 70px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+.container:nth-child(2) .upperBox {
+  margin-bottom: 25px;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  height: 0px;
+  bottom: 0px;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgb(248, 74, 74);
+  transition: all 0.2s ease-in;
+}
+.upperBox .upperBox__content {
+  margin-left: 20px;
+  width: 30%;
+  height: 50%;
+  border-radius: 10%;
+  text-align: center;
+  background-color: rgb(153, 61, 61);
+}
+.upperBox .upperBox__text {
+  width: 40%;
+  height: 50%;
+}
+.container:nth-child(2) .mainBox:hover {
+  height: 100px;
+  transform: translateY(-25px);
+}
+.container:nth-child(2) .mainBox:hover + .upperBox {
+  color: rgba(255, 255, 255, 1);
+  height: 50px;
+}
+
+.container:nth-child(3) .backgroundBox {
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+  background-color: rgb(94, 94, 94);
+}
+.backgroundBox .backgroundBox__content {
+  margin-top: 120px;
+  color: white;
+  text-align: center;
+}
+
+.container:nth-child(3) .smallerBox {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(154, 215, 226);
+  transition: transform 0.2s ease-in;
+}
+
+.smallerBox .smallerBox__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  height: 50%;
+  border-radius: 10%;
+  background-color: rgb(85, 85, 163);
+}
+
+.container:nth-child(3) .smallerBox:hover {
+  transform: scale(0.5) translateY(-30px);
+}

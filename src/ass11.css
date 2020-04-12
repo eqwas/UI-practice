@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f8f7ff;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.phone {
+  z-index: 0;
+  margin-top: 50px;
+  background-color: white;
+  width: 350px;
+  height: 700px;
+  border-radius: 40px;
+  box-shadow: 30px 30px 40px rgba(118, 146, 180, 0.18);
+  overflow: hidden;
+  position: relative;
+}
+.phone .phone__status-bar {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  opacity: 1;
+  position: absolute;
+  font-weight: 600;
+}
+
+.status-bar i {
+  font-size: 14px;
+}
+
+.phone .phone__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 15%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url("../img/tower.png");
+
+  background-repeat: no-repeat;
+}
+
+.phone .phone__main {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 640px;
+}
+.phone__main .main__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+.phone__main .main__preview {
+  margin-top: 100px;
+  width: 100%;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.prv__image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-right: 10px;
+}
+.prv__image .imgBox:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: url("../img/att1.png");
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.prv__image .imgBox:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: url("../img/att2.png");
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.prv__image .imgBox:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: url("../img/att3.png");
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.prv__image .imgBox:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(73, 111, 182);
+  color: white;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.phone__main .main__tag {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+}
+.main__tag .tag__boxes {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  display: flex;
+  color: rgb(119, 111, 173);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tag:nth-child(1) {
+  margin-left: 10px;
+  width: 55px;
+  height: 30px;
+  border-radius: 15px 15px 15px 0px;
+  background-color: rgb(199, 192, 236);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tag:nth-child(2) {
+  margin-left: 10px;
+  width: 90px;
+  height: 30px;
+  border-radius: 15px 15px 15px 0px;
+  background-color: rgb(199, 192, 236);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag:nth-child(3) {
+  margin-left: 10px;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px 15px 15px 0px;
+  background-color: rgb(199, 192, 236);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__content {
+  padding: 0px 20px;
+}
+
+.content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__title .title {
+  font-size: 36px;
+  font-weight: 800;
+  color: black;
+}
+.content__title .heartBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  box-shadow: 0px 0px 10px 2px #e6e5eb;
+}
+.heart {
+  color: red;
+}
+.content__place {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.place__name {
+  opacity: 0.5;
+  padding-left: 10px;
+}
+
+.content__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 10px;
+}
+.info__rating {
+  color: rgb(255, 209, 83);
+}
+.info__ratingNum {
+  color: black;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.info__distance {
+  opacity: 0.5;
+}
+
+.content__overView {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.overView__title {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.overView__content {
+  font-size: 15px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.overView__readMore {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.nav {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0px;
+  left: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+.nav .nav__list {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+}
+.nav__list-item {
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__list-item:hover {
+  color: rgb(106, 106, 199);
+  border-top: 3px solid rgb(106, 106, 199);
+}
+.mark {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  bottom: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.routeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(132, 132, 221);
+  box-shadow: 0px 7px 10px 6px rgb(229, 228, 255);
+}
+.bottomMark {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomMarkBox {
+  width: 70px;
+  height: 70px;
+  opacity: 0.2;
+  border-radius: 50%;
+  background-color: black;
+}

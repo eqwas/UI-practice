@@ -1,0 +1,134 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+
+body {
+  background-color: black;
+  height: 100%;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.firstbox {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+.imgbox {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  background-image: url("../img/bow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+.item {
+  padding: 30px;
+}
+.itemname {
+  font-size: 24px;
+  font-weight: 600;
+}
+.item__content {
+  margin-top: 20px;
+}
+.itemcontent {
+  opacity: 0.7;
+}
+.item__price {
+  font-size: 20px;
+  font-weight: 600;
+}
+.item__info {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userpoint {
+  margin-left: 10px;
+}
+
+i {
+  color: #febd51;
+}
+
+.secondbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.topbox {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  background-image: url("../img/top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.topbox .topbox__profile img {
+  position: absolute;
+  left: 195px;
+  bottom: -50px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.bottombox {
+  margin-top: 30px;
+}
+.bottombox__username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+.bottombox__job {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.buttonbox {
+  width: 500px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.buttonbox .buttonbox__follow-btn {
+  width: 150px;
+  height: 70px;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonbox .buttonbox__message-btn {
+  width: 150px;
+  height: 70px;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
